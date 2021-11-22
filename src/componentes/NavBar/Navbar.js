@@ -1,5 +1,12 @@
 import './NavBar.css'
 
+const Button = (props) =>  { 
+  
+    return (
+      <button>{props.label}</button>
+    )
+}
+
 const NavBar = () => {
     return (
         <header>
@@ -11,7 +18,7 @@ const NavBar = () => {
                     <li><a href="#">Acerca de</a></li>
                 </ul>
             </nav>
-            <a className="cta" href="#"><button>Contacto</button></a>
+            <a className="cta" href="#"><Button label= 'contacto'/></a>
         </header>
 
     )
