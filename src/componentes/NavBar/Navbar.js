@@ -12,7 +12,7 @@ const Button = (props) =>  {
 const NavBar = () => {
     return (
         <header>
-            <img className= "logo" src="./NavBar/LOGO-BI-SIN-FONDO.png" alt="logo"></img>
+            <img className= "logo" src="../images/LOGO-BI-SIN-FONDO.png" alt="logo"></img>
             <nav>
                 <ul className="nav_links">
                     <li><a href="#">Escalada</a></li>

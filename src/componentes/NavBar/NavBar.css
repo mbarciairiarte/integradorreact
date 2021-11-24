@@ -25,7 +25,9 @@ header {
 }
 
 .logo {
+    display: flex;
     cursor: pointer;
+    height: 100px;
 }
 
 .nav_links {
