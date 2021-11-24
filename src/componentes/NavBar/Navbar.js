@@ -1,4 +1,6 @@
+import CartWidget from '../CartWidget/CartWidget'
 import './NavBar.css'
+
 
 const Button = (props) =>  { 
   
@@ -10,15 +12,18 @@ const Button = (props) =>  {
 const NavBar = () => {
     return (
         <header>
-            <img className= "logo" src="./public.logo192.png" alt="logo"></img>
+            <img className= "logo" src="./NavBar/LOGO-BI-SIN-FONDO.png" alt="logo"></img>
             <nav>
                 <ul className="nav_links">
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Escalada</a></li>
+                    <li><a href="#">Trekking</a></li>
+                    <li><a href="#">Montañismo</a></li>
                 </ul>
+                
             </nav>
+
             <a className="cta" href="#"><Button label= 'contacto'/></a>
+            <CartWidget/>
         </header>
 
     )
