@@ -1,22 +1,21 @@
-import {Component} from 'react'; 
 import './App.css';
 import ItemListContainer from './componentes/ItemListContainer';
 import Navbar from './componentes/NavBar/Navbar';
-import Button from './componentes/Button/Button';
+import ItemCount from './componentes/ItemCount/ItemCount.js';
 
-/* function App() {
+function App() {
   return (
     <div className="App">
       <header className="App-header">
       <Navbar/>  
       <ItemListContainer/>
-      
+      <ItemCount/>
       </header>
     </div>
   );
-} */
+}
 
-class App extends Component {
+/* class App extends Component {
   constructor (props) {
     super(props)
     this.state = {count : 0}
@@ -53,6 +52,6 @@ class App extends Component {
       </div>
     );
   }
-}
+} */
 
 export default App;
