@@ -1,44 +1,51 @@
-import { Component } from 'react'
-/* import './App.css'; */
-import Button from '../Button/Button'
+import React, {useState} from 'react';
+import "./ItemCount.css"
 
-class ItemCount extends Component {
-    constructor (props) {
-      super(props)
-      this.state = {count : 0}
-    }
-  
-    render() {
-      const increment = () =>{
-        this.setState ({
-          count: this.state.count + 1
-        })
-      }
-  
-      const decrement = () => {
-        this.setState ({
-          count: this.state.count - 1
-        })
-      }
-  
-      const reset = () => {
-        this.setState ({
-          count: 0
-        })
-      }
-  
-      return (
-        <div className="itemCount">
-          <h1>{this.state.count}</h1>
-{/*           <img className="logo"src={"./images/LOGO-BI-SIN-FONDO.png"}  alt="logo img"/> */}
-          <button onClick={() => decrement()}>Decrementar</button>
-          <button onClick={() => reset()}>Resetear</button>
-          <Button func={reset} label={'Reset'}/>
-          <button onClick={() => increment()}>Incrementar</button>
-        </div>
-      );
-    }
+function countInicial () {
+  console.log('iniciando contador')
+  return 0
+}
+
+function ItemCount (){
+
+  const [count, setCount] = useState (() =>countInicial())
+
+  function decrementCount(){
+    setCount(prevCount => prevCount - 1)
   }
 
+  function incrementCount () {
+    setCount(prevCount => prevCount + 1)
+  }
+
+  return (
+    <>
+      <button className= "buttonWrapper" onClick= {decrementCount}>-</button>
+      <span>{count}</span>
+      <button className= "buttonWrapper" onClick= {incrementCount}>+</button>
+    </>
+  )
+}
+
 export default ItemCount
+/* 
+const {useState} = 'react';
+
+
+function ItemCount (){
+const [count, setCount] = useState(0);
+
+return(
+  <div className= "itemCount">
+    <h1>{count}</h1>
+      <div className="button-wrapper">
+         <button onClick = {() => setCount(count-1)}>-</button>
+         <button onClick = {() => setCount(count+1)}>+</button>
+      </div>
+  </div>
+);
+
+}
+
+export default ItemCount */
 
