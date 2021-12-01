@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import "./ItemCount.css"
 
 function countInicial () {
   console.log('iniciando contador')
@@ -11,18 +10,20 @@ function ItemCount (){
   const [count, setCount] = useState (() =>countInicial())
 
   function decrementCount(){
+    if (count >= 1){
     setCount(prevCount => prevCount - 1)
-  }
+  }}
 
   function incrementCount () {
+    if (count <= 9 ){
     setCount(prevCount => prevCount + 1)
-  }
+  }}
 
   return (
     <>
-      <button className= "buttonWrapper" onClick= {decrementCount}>-</button>
-      <span>{count}</span>
       <button className= "buttonWrapper" onClick= {incrementCount}>+</button>
+      <span>{count}</span>
+      <button className= "buttonWrapper" onClick= {decrementCount}>-</button>
     </>
   )
 }

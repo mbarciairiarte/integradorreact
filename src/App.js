@@ -11,6 +11,12 @@ function App() {
       <Navbar/>  
       <ItemListContainer/>
       <ItemCount/>
+      <ItemCount/>
+      <ItemCount/>
+      <ItemCount/>
+      <ItemCount/>
+      <ItemCount/>
+      <ItemCount/>
       </header>
     </div>
   );
