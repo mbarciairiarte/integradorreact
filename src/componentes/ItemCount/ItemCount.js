@@ -29,24 +29,4 @@ function ItemCount (){
 }
 
 export default ItemCount
-/* 
-const {useState} = 'react';
-
-
-function ItemCount (){
-const [count, setCount] = useState(0);
-
-return(
-  <div className= "itemCount">
-    <h1>{count}</h1>
-      <div className="button-wrapper">
-         <button onClick = {() => setCount(count-1)}>-</button>
-         <button onClick = {() => setCount(count+1)}>+</button>
-      </div>
-  </div>
-);
-
-}
-
-export default ItemCount */
 
