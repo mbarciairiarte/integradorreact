@@ -1,0 +1,25 @@
+
+.ItemsProducts {
+    
+    width: 200px;
+    padding: 10px;
+    margin: 30px;
+    font-size: 10px;
+    background-color: lightblue;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+}
+
+.ContainerItem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+.listProduct{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

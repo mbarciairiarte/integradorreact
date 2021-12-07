@@ -3,7 +3,7 @@
         "id": "1",
         "name": "producto 1",
         "price": "$16.990",
-        "img": "LOGO-BI-SIN-FONDO.png",
+        "img": "../images/LOGO-BI-SIN-FONDO.png",
         "description": "lorem ipsum",
         "stock": "Stock disponible: 10",
         "valueStock": 10
@@ -12,7 +12,7 @@
         "id": "2",
         "name": "producto 2",
         "price": "$10.990",
-        "img": "LOGO-BI-SIN-FONDO.png",
+        "img": "../images/LOGO-BI-SIN-FONDO.png",
         "description": "lorem ipsum",
         "stock": "Stock disponible: 2",
         "valueStock": 2
@@ -21,7 +21,7 @@
         "id": "3",
         "name": "producto 3",
         "price": "$23.490",
-        "img": "LOGO-BI-SIN-FONDO.png",
+        "img": "../images/LOGO-BI-SIN-FONDO.png",
         "description": "lorem ipsum",
         "stock": "Stock disponible: 3"
     },
@@ -29,7 +29,7 @@
         "id": "4",
         "name": "producto 4",
         "price": "$140.990",
-        "img": "LOGO-BI-SIN-FONDO.png",
+        "img": "../images/LOGO-BI-SIN-FONDO.png",
         "description": "lorem ipsum",
         "stock": "Stock disponible: 4"
     },
@@ -37,7 +37,7 @@
         "id": "5",
         "name": "producto 5",
         "price": "$42.990",
-        "img": "LOGO-BI-SIN-FONDO.png",
+        "img": "../images/LOGO-BI-SIN-FONDO.png",
         "description": "lorem ipsum",
         "stock": "Stock disponible: 5"
     }
